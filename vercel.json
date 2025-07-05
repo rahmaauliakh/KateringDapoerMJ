@@ -15,6 +15,10 @@
             "dest": "/public/storage/$1"
         },
         {
+            "src": "/vendor/filament/(.*)",
+            "dest": "/public/vendor/filament/$1"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
