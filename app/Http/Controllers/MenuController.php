@@ -9,7 +9,6 @@ class MenuController extends Controller
 {
     public function index()
 {
-    // Ambil semua menu dengan kategori dan foto
     $menus = Menu::with(['category', 'photos'])->get();
 
     return view('menus.index', compact('menus'));
@@ -18,7 +17,7 @@ class MenuController extends Controller
 
 public function show(Menu $menu)
 {
-    $menu->load(['photos', 'category']); // pastikan reviews ikut dimuat
+    $menu->load(['photos', 'category']); 
     return view('menus.show', compact('menu'));
 }
 
