@@ -42,6 +42,7 @@
             </div>
             <div class="col-md-6">
                 <h2 class="fw-bold">{{ $menu->name }}</h2>
+                <p class="mb-1">Kategori: <strong>{{ $menu->category->name }}</strong></p>
                 <p class="text-muted mb-1">Tersedia mulai: <strong>{{ \Carbon\Carbon::parse($menu->date)->format('d M Y') }}</strong></p>
                 <p class="price-tag">Rp {{ number_format($menu->price, 0, ',', '.') }}</p>
 
