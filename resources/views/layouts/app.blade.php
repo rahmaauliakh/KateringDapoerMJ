@@ -62,12 +62,18 @@
   scroll-margin-top: 80px;
 }
 
-        footer {
-            background-color: #FEBA17;
-            color: #4E1F00;
-            padding: 20px 0;
-            text-align: center;
-        }
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FEBA17;
+    color: #4E1F00;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 1030;
+}
+
     </style>
 </head>
 <body>
@@ -96,7 +102,7 @@
     </li>
 </ul>
 
-            <!-- Tombol kanan -->
+          
 <div class="d-flex align-items-center gap-2">
     <a href="{{ url('/cart') }}" class="btn btn-sm text-white" style="background-color: #4E1F00;">
         <i class="bi bi-cart-fill"></i> Keranjang
