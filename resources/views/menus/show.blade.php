@@ -6,8 +6,8 @@
 <style>
     .menu-detail {
         background-color: #F8F4E1;
-        border-radius: 1rem;
         padding: 2rem;
+
     }
     .price-tag {
         color: #4E1F00;
@@ -54,7 +54,7 @@
 
                 <form action="{{ route('cart.add', $menu->id) }}" method="POST">
     @csrf
-    <button type="submit" class="btn btn-warning w-100 text-white">Tambah ke Keranjang</button>
+    <button type="submit" class="btn btn-warning w-100 text-white" style="background-color: #4E1F00">Tambah ke Keranjang</button>
 </form>
 
             </div>
